@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Moda Market — Clothes & Shoes</title>
+    <meta name="description" content="Demo e-commerce site for clothes and shoes" />
+    <link rel="stylesheet" href="shop.css" />
+</head>
+
+<body>
+    <header>
+        <img src="logo1.png" alt="" class="logo">
+        <div class="logo">Boss<span>Lady</span></div>
+        <nav>
+            <li><a href="fashion.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </nav>
+        <div class="cart" id="cart">
+            <span class="cart-icon">🛒</span>
+            <span class="cart-count" id="cart-count">0</span>
+            <div class="cart-dropdown" id="cart-dropdown">
+                <h4>Shopping Cart</h4>
+                <div class="cart-items" id="cart-items">
+                    <p>No items in cart.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search products...">
+    </div>
+
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="boys">Boys</button>
+        <button class="filter-btn" data-filter="girls">Girls</button>
+        <button class="filter-btn" data-filter="shoes">Shoes</button>
+    </div>
+
+    <div class="product-grid" id="product-grid">
+        <!-- Product 1 -->
+        <div class="product-item" data-gender="boys" data-category="clothing">
+            <img src="photo-1632982298793-2e9ea6c42ece.avif" alt="Boys T-Shirt">
+            <div class="product-details">
+                <h3 class="product-title">Boys T-Shirt</h3>
+                <p class="product-description">Comfortable cotton t-shirt for everyday wear.</p>
+                <div class="product-price">$19.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-item" data-gender="boys" data-category="clothing">
+            <img src="قميص قطني وشورت بطبعة للفتى ، بدون تي شيرت متعدد….jpeg" alt="Boys Jeans">
+            <div class="product-details">
+                <h3 class="product-title">Boys Jeans</h3>
+                <p class="product-description">Stylish denim jeans with a relaxed fit.</p>
+                <div class="product-price">$29.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-item" data-gender="girls" data-category="clothing">
+            <img src="Dyl & Jess's Amazon Page.jpeg" alt="Girls Dress">
+            <div class="product-details">
+                <h3 class="product-title">Girls Dress</h3>
+                <p class="product-description">Beautiful floral dress perfect for special occasions.</p>
+                <div class="product-price">$39.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-item" data-gender="girls" data-category="clothing">
+            <img src="Tween Girls Casual Everyday Distressed Flap Pocket….jpeg" alt="Girls Jacket">
+            <div class="product-details">
+                <h3 class="product-title">Girls Jacket</h3>
+                <p class="product-description">Warm and cozy jacket for cooler weather.</p>
+                <div class="product-price">$49.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 5 -->
+        <div class="product-item" data-gender="boys" data-category="shoes">
+            <img src="piyush-haswani-asD3pM3lSkA-unsplash.jpg" alt="Boys Sneakers">
+            <div class="product-details">
+                <h3 class="product-title">Boys Sneakers</h3>
+                <p class="product-description">Durable sneakers with great grip for active kids.</p>
+                <div class="product-price">$34.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 6 -->
+        <div class="product-item" data-gender="girls" data-category="shoes">
+            <img src="premium_photo-1744312220261-200237b9166b.avif" alt="Girls Sneakers">
+            <div class="product-details">
+                <h3 class="product-title">Girls Sneakers</h3>
+                <p class="product-description">Stylish sneakers for casual wear and play.</p>
+                <div class="product-price">$32.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+
+
+        <!-- Product 1 -->
+        <div class="product-item" data-gender="boys" data-category="clothing">
+            <img src="premiu.avif" alt="Boys T-Shirt">
+            <div class="product-details">
+                <h3 class="product-title">Boys T-Shirt</h3>
+                <p class="product-description">Comfortable cotton t-shirt for everyday wear.</p>
+                <div class="product-price">$19.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-item" data-gender="boys" data-category="clothing">
+            <img src="photo-1661822178443-1a231de3cd22.avif" alt="Boys Jeans">
+            <div class="product-details">
+                <h3 class="product-title">Boys Jeans</h3>
+                <p class="product-description">Stylish denim jeans with a relaxed fit.</p>
+                <div class="product-price">$29.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-item" data-gender="girls" data-category="clothing">
+            <img src=" premium_photo-1664202526475-8f43ee70166d.avif" alt="Girls Dress">
+            <div class="product-details">
+                <h3 class="product-title">Girls Dress</h3>
+                <p class="product-description">Beautiful floral dress perfect for special occasions.</p>
+                <div class="product-price">$39.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-item" data-gender="girls" data-category="clothing">
+            <img src="2pcs Set_ Teen Girl Casual Cool Graphic Print….jpeg" alt="Girls Jacket">
+            <div class="product-details">
+                <h3 class="product-title">Girls Jacket</h3>
+                <p class="product-description">Warm and cozy jacket for cooler weather.</p>
+                <div class="product-price">$49.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 5 -->
+        <div class="product-item" data-gender="boys" data-category="shoes">
+            <img src=" ox-street-BWPqHZBhMVA-unsplash.jpg" alt="Boys Sneakers">
+            <div class="product-details">
+                <h3 class="product-title">Boys Sneakers</h3>
+                <p class="product-description">Durable sneakers with great grip for active kids.</p>
+                <div class="product-price">$34.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 6 -->
+        <div class="product-item" data-gender="girls" data-category="shoes">
+            <img src="premium_photo-1671718110912-2bf5ce67d504.avif" alt="Girls Sneakers">
+            <div class="product-details">
+                <h3 class="product-title">Girls Sneakers</h3>
+                <p class="product-description">Stylish sneakers for casual wear and play.</p>
+                <div class="product-price">$32.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 1 -->
+        <div class="product-item" data-gender="boys" data-category="clothing">
+            <img src="prem.avif" alt="Boys T-Shirt">
+            <div class="product-details">
+                <h3 class="product-title">Boys T-Shirt</h3>
+                <p class="product-description">Comfortable cotton t-shirt for everyday wear.</p>
+                <div class="product-price">$19.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-item" data-gender="boys" data-category="clothing">
+            <img src=" photo-1714729382668-7bc3bb261662.avif" alt="Boys Jeans">
+            <div class="product-details">
+                <h3 class="product-title">Boys Jeans</h3>
+                <p class="product-description">Stylish denim jeans with a relaxed fit.</p>
+                <div class="product-price">$29.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-item" data-gender="girls" data-category="clothing">
+            <img src="download.png" alt="Girls Dress">
+            <div class="product-details">
+                <h3 class="product-title">Girls Dress</h3>
+                <p class="product-description">Beautiful floral dress perfect for special occasions.</p>
+                <div class="product-price">$39.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-item" data-gender="girls" data-category="clothing">
+            <img src="photo-1582719188393-bb71ca45dbb9.avif" alt="Girls Jacket">
+            <div class="product-details">
+                <h3 class="product-title">Girls Jacket</h3>
+                <p class="product-description">Warm and cozy jacket for cooler weather.</p>
+                <div class="product-price">$49.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 5 -->
+        <div class="product-item" data-gender="boys" data-category="shoes">
+            <img src=" ox-street-GlIVqdrBR2A-unsplash.jpg" alt="Boys Sneakers">
+            <div class="product-details">
+                <h3 class="product-title">Boys Sneakers</h3>
+                <p class="product-description">Durable sneakers with great grip for active kids.</p>
+                <div class="product-price">$34.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 6 -->
+        <div class="product-item" data-gender="girls" data-category="shoes">
+            <img src="photo-1552419272-b0d8e736ea2d.avif" alt="Girls Sneakers">
+            <div class="product-details">
+                <h3 class="product-title">Girls Sneakers</h3>
+                <p class="product-description">Stylish sneakers for casual wear and play.</p>
+                <div class="product-price">$32.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+
+
+        <!-- Product 1 -->
+        <div class="product-item" data-gender="boys" data-category="clothing">
+            <img src=" Klassisches Hemd für stilbewusste Männer Das….jpeg" alt="Boys T-Shirt">
+            <div class="product-details">
+                <h3 class="product-title">Boys T-Shirt</h3>
+                <p class="product-description">Comfortable cotton t-shirt for everyday wear.</p>
+                <div class="product-price">$19.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-item" data-gender="boys" data-category="clothing">
+            <img src="premium.avif" alt="Boys Jeans">
+            <div class="product-details">
+                <h3 class="product-title">Boys Jeans</h3>
+                <p class="product-description">Stylish denim jeans with a relaxed fit.</p>
+                <div class="product-price">$29.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-item" data-gender="girls" data-category="clothing">
+            <img src="photo-1700676195086-81b936390de4.avif" alt="Girls Dress">
+            <div class="product-details">
+                <h3 class="product-title">Girls Dress</h3>
+                <p class="product-description">Beautiful floral dress perfect for special occasions.</p>
+                <div class="product-price">$39.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-item" data-gender="girls" data-category="clothing">
+            <img src="photo-1603189343302-e603f7add05a.avif" alt="Girls Jacket">
+            <div class="product-details">
+                <h3 class="product-title">Girls Jacket</h3>
+                <p class="product-description">Warm and cozy jacket for cooler weather.</p>
+                <div class="product-price">$49.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 5 -->
+        <div class="product-item" data-gender="boys" data-category="shoes">
+            <img src="photo-1584735174914-6b1272458e3e.avif" alt="Boys Sneakers">
+            <div class="product-details">
+                <h3 class="product-title">Boys Sneakers</h3>
+                <p class="product-description">Durable sneakers with great grip for active kids.</p>
+                <div class="product-price">$34.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 6 -->
+        <div class="product-item" data-gender="girls" data-category="shoes">
+            <img src="photo-1656164753657-8ff832063a71.avif" alt="Girls Sneakers">
+            <div class="product-details">
+                <h3 class="product-title">Girls Sneakers</h3>
+                <p class="product-description">Stylish sneakers for casual wear and play.</p>
+                <div class="product-price">$32.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="shop.js"></script>
+</body>
+
+</html>
